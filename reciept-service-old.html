@@ -1,0 +1,292 @@
+<html lang="en"><head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+      <meta content="en" name="language">
+    <style>
+          .break { page-break-before: always; } 
+      #invoice-POS{
+          max-width:800px;
+              margin:0 auto;
+      /* padding:5mm;
+      margin: -7px auto;
+      width: 60%; */
+      background: #FFF;
+      ::selection {background: #f31544; color: #FFF}
+      ::moz-selection {background: #f31544; color: #FFF;}
+      h1{
+      font-size: 1.5em;
+      color: #222;
+      }
+      h2{font-size: .9em;}
+      h3{
+      font-size: 1.2em;
+      font-weight: 300;
+      line-height: 2em;
+      }
+      p{
+      font-size: .7em;
+      color: #666;
+      line-height: 1.2em;
+      }
+      #top, #mid,#bot{
+      border-bottom: 1px solid #EEE;
+      }
+      #top{min-height: 100px;}
+      #mid{min-height: 80px;} 
+      #bot{ min-height: 50px;}
+      .info{
+      display: block;
+      margin-left: 0;
+      }
+      .title{
+      float: right;
+      }
+      .title p{text-align: right;} 
+      table{
+      width: 100%;
+      border-collapse: collapse;
+      }
+      .tabletitle{
+      font-size: .5em;
+      background: #ccc;
+      }
+      .service{border-bottom: 1px solid #EEE;}
+      .item{width: 24mm;}
+      .itemtext{font-size: .5em;}
+      div.info {
+      width:60%;
+      }
+      }
+      .addHead{
+      opacity: 1;
+      color: rgba(55,65,81,1);
+      font-family: "SFProText-Semibold";
+      font-size: 14px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0px;
+      text-align: left;
+      line-height: 20px;
+      }
+      .txt {
+      opacity: 1;
+      color: rgba(107,114,128,1);
+      font-family: "SFProText-Regular";
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0px;
+      text-align: left;
+      line-height: 16px;
+      }
+      .info1{
+      font-family: "SFProText-Bold";
+      font-size: 16px;
+      font-weight: 700;
+      }
+      .itemHead {
+      border-radius: 8px;
+      opacity: 1;
+      padding: 8px;
+      margin-bottom: 20px;
+      width: 100%;
+      display: block;
+      min-height: 2vh;
+      }
+      .part1 {
+      color: rgba(55,65,81,1);
+      font-size: 12px;
+      font-weight: 600;
+      width: 33%;
+      float: left;
+      margin: 0;
+     }
+      .part2 {
+      color: rgba(107,114,128,1);
+      font-size: 12px;
+      width: 33%;
+      float: left;
+      margin: 0;
+     }
+      .part3 {
+      font-size: 12px;
+      font-weight: 700;
+      width: 33%;
+      float: right;
+      text-align: center;
+      margin: 0;
+      }
+      .theadItem{
+      font-size: 12px
+      }
+      .itemtext{
+      color:rgba(55,65,81,1);
+      font-size: 12px;
+      }
+      .diagNotes{
+      line-height: 16px;
+      font-style: normal;
+      font-size: 12px;
+      color:rgba(107,114,128,1);
+      }</body></html>
+      .calcHead {
+          opacity: 1;
+          color: rgba(55,65,81,1);
+          font-family: "SFProText-Medium";
+          font-size: 12px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: 0px;
+          text-align: left;
+          line-height: 16px;
+      }
+      .calcMain {
+          opacity: 1;
+          color: rgba(107,114,128,1);
+          font-family: "SFProText-Regular";
+          font-size: 12px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: 0px;
+          text-align: left;
+          line-height: 16px;
+          margin-left:15px;
+      }
+      .extraData {
+          font-weight: 700;
+          line-height: 16px;
+          font-size: 12px;
+      }
+      .extraHead {
+          margin: 0 auto;
+      }
+      .preCond{
+          opacity: 1;
+          color: rgba(107,114,128,1);
+          font-family: "ArialMT";
+          font-size: 12px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: 0px;
+          text-align: left;
+          line-height: 16px;
+      }
+      .text-right{
+          text-align: right;
+      }
+      .width-40{
+          width: 40%;
+      }
+      .width-60{
+          width: 60%;
+      }
+      .width-50{
+          width: 50%;
+      }
+      .flex-class{
+      display: flex;
+      flex-wrap: wrap;
+      }
+      .flex-class .preCond {
+      flex-grow: 1;
+      width: 33%;
+      }
+      /* @media screen {
+      div.divFooter {
+          display: none;
+      }
+      }
+      @media print {
+      div.divFooter {
+          position: fixed;
+          bottom: 0;
+          width: 60%;
+      }
+      .page-break {
+          page-break-after: always;
+      }
+      .divFooter span:nth-child(3) {
+          margin-left:375px !important; 
+       }
+      } */
+  </style>
+  <div id="invoice-POS">
+      <div id="mid" style="display:flex;">
+      </div>
+  
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <p class="info1">Check-In Receipt</p>
+       <td  width="130" valign="top"> 
+          <div class="view-logo" style="float:left;">{{store_logo}}</div> 
+          </td>
+    <tbody>
+      <tr>
+        <td align="right" valign="top">
+        <div>
+        <p class="info1">Check-In Details</p>
+                 {{barcode}}
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+      <div style="display:flex">
+          <p class="txt width-50">From____________________________________________________________<br><br>
+              <span class="addHead">{{store_name}}</span><br>
+              {{store_phone}},{{store_email}}<br>
+              {{store_address}}, {{store_state}}, {{store_post_code}}
+          </p>
+          <p class="txt width-50">To___________________________________________<br><br>
+          <span class="addHead"> {{customer_name}} </span> </br>
+          {{customer_mobile}}, {{customer_email}}<br>
+          {{customer_address_line_1}} , {{customer_city}} {{customer_state}}, {{customer_zip}}
+          </p>
+      </div>
+          <div class="itemHead">
+          {{invoice_line_items_table}}
+    </p>
+      <div style="display: flex;width:100%">
+          <div style="display:flex;width: 70%;margin-top:20px">
+              <p class="txt" style="width: 30%;">{{signature}}<br><br>
+                  <span class="addHead">Customer Signature</span>   
+              </p>
+              <p class="txt" style="margin-left: 40px;">{{sales_person}}<br><br>
+                  <span class="addHead">Employee Signature</span>
+              </p>
+          </div>
+          <div>
+          <div style="margin-left:180px;">
+              <table width="100%" cellspacing="0" cellpadding="0">
+                  <tbody>
+                      <tr>
+                          <td><span class="calcHead"> Sub Total </span></td>
+                          <td><span class="calcMain">{{sub_total}}</span></td>
+                      </tr>
+                      <tr>
+                          <td><span class="calcHead"> Tax </span></td>
+                          <td><span class="calcMain">{{tax}}</span></td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                              <table width="100%" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                      <tr>
+                                          <td><hr></td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><span class="calcHead"> Total </span></td>
+                          <td><span class="calcMain">{{total}}</span></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+  <div class="break"></div>
+  <h3>Terms  Condition</h3><p>{{terms_conditions}}</p>         </div>
+  </body>
+  </html>

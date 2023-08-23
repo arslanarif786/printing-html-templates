@@ -1,0 +1,225 @@
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="en" name="language">
+    <style>
+        .break {
+            page-break-before: always;
+        }
+
+        #invoice-POS {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #FFF;
+        }
+
+        #bot {
+            min-height: 50px;
+        }
+
+
+        .itemHead {
+            border-radius: 4px;
+            opacity: 1;
+            background-color: #F3F4F6;
+            padding: 8px;
+            margin-bottom: 16px;
+            margin-top: 16px;
+            display: block;
+            min-height: 2vh
+        }
+
+        .custom-font {
+            font-weight: 600;
+        }
+
+        .theadItem {
+            opacity: 1;
+            color: #374151;
+            font-family: "ArialMT";
+            font-size: 10px;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 0px;
+            text-align: left;
+            line-height: 16px;
+        }
+
+        .service {
+            border-bottom: 1px solid #EEE;
+        }
+
+        .itemtext {
+            color: rgba(55, 65, 81, 1);
+            font-size: 12px;
+        }
+
+        .flex-class {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .extraData {
+            font-weight: 700;
+            line-height: 16px;
+            font-size: 12px;
+        }
+
+        .extraHead {
+            margin: 0 auto;
+        }
+
+        .preCond {
+            opacity: 1;
+            color: rgba(107, 114, 128, 1);
+            font-family: "ArialMT";
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0px;
+            text-align: left;
+            line-height: 16px;
+        }
+
+        .part1 {
+            color: rgba(55, 65, 81, 1);
+            font-size: 12px;
+            font-weight: 600;
+            width: 34%;
+            float: left;
+            margin: 0;
+        }
+
+        .part2 {
+            color: rgba(107, 114, 128, 1);
+            font-size: 12px;
+            width: 33%;
+            float: left;
+            margin: 0;
+        }
+
+        .part3 {
+            font-size: 12px;
+            font-weight: 700;
+            width: 33%;
+            float: right;
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+    <div id="invoice-POS">
+
+        <div class="itemHead">
+            <p class="part1">Pearl Pendant</p>
+            <p class="part2">12345</p>
+            <p class="part3">
+                <span class=""> Due Date: </span>
+                <span style="font-weight: 100; margin-left: 8px;"> 14-07-2023 </span>
+            </p>
+        </div>
+        <div id="bot">
+            <table style="width: 100%;">
+                <tbody>
+                    <tr class="tabletitle">
+                        <td>
+                            <p class="theadItem">#</p>
+                        </td>
+                        <td>
+                            <p class="theadItem">Name</p>
+                        </td>
+                        <td class="Hour">
+                            <p class="theadItem">Qty/h</p>
+                        </td>
+                        <td class="Rate">
+                            <p class="theadItem">Price</p>
+                        </td>
+                        <td class="Rate">
+                            <p class="theadItem">Disc</p>
+                        </td>
+                        <td class="Rate">
+                            <p class="theadItem">Tax</p>
+                        </td>
+                        <td class="Rate">
+                            <p class="theadItem">Total</p>
+                        </td>
+                    </tr>
+                    <tr class="service">
+                        <td class="tableitem">
+                            <p class="itemtext">1</p>
+                        </td>
+                        <td class="tableitem">
+                            <p class="itemtext">Distorted Service</p>
+                        </td>
+                        <td class="tableitem">
+                            <p class="itemtext">1</p>
+                        </td>
+                        <td class="tableitem">
+                            <p class="itemtext">$25.00</p>
+                        </td>
+                        <td class="tableitem">
+                            <p class="itemtext">$0.00</p>
+                        </td>
+                        <td class="tableitem">
+                            <p class="itemtext">$2.50</p>
+                        </td>
+                        <td class="tableitem">
+                            <p class="itemtext">$27.50</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </p>
+            <hr>
+        </div>
+
+
+        <div style="margin-top: 24px">
+            <p class="extraHead">
+                <span class="extraData">Asset Details:</span><br>
+            </p>
+            <div class="flex-class">
+                <div style="width: 16rem;" class="preCond">
+                    Brand:
+                    Samsung </div>
+                <div style="width: 16rem;" class="preCond">
+                    Add Date : 2023-07-14 </div>
+                <div style="width: 16rem;" class="preCond">
+                    Customer Name : asdfg </div>
+                <div style="width: 16rem;" class="preCond">
+                    Is it Monday today?:
+                    No </div>
+            </div>
+
+            <div style="margin-top: 24px">
+                <p class="extraHead">
+                    <span class="extraData">Pre Conditions:</span><br>
+                </p>
+                <div class="flex-class">
+                    <div style="width: 16rem;" class="preCond">
+                        Screen Damage : No </div>
+                    <div style="width: 16rem;" class="preCond">
+                        Keypad : No </div>
+                </div>
+                <p></p>
+            </div>
+
+            <div style="margin-top: 24px">
+                <p class="extraHead">
+                    <span class="extraData">Post Conditions:</span><br>
+                </p>
+                <div class="flex-class">
+                    <div style="width: 16rem;" class="preCond">
+                        Screen Damage: No </div>
+                    <div style="width: 16rem;" class="preCond">
+                        Keypad: No </div>
+                </div>
+                <p></p>
+            </div>
+
+
+        </div>
+    </div>
+    </body>
+
+</html>
